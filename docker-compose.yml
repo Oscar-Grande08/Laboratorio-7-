@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  sentimientos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sentimientos_app
+    ports:
+      - "8501:8501"
+    # Montamos /dev/video0 para el acceso a la cámara
+    devices:
+      - "/dev/video0:/dev/video0"
+    # Persistimos logs
+    volumes:
+      - ./logs.txt:/app/logs.txt
+    restart: unless-stopped
