@@ -1,6 +1,3 @@
-#!/bin/bash
-# etl_process.sh
-
 # Configuración
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 INPUT_FILE="$BASE_DIR/BD_SENSORES.xlsx"
