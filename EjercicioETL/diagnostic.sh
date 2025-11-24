@@ -1,4 +1,3 @@
-#!/bin/bash
 echo " Diagnóstico del Sistema"
 echo "Directorio: $(pwd)"
 echo "Python: $(python3 --version)"
